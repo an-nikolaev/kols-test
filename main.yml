@@ -1,0 +1,13 @@
+tasks:
+  - name: git pull
+    git:
+      repo: git@github.com:an-nikolaev/kols-test.git
+      dest: /home/ibljad/ansible
+
+  - name: build tests
+    shell: mvn package
+
+  - name: run tests script
+    shell:
+      chdir: target
+      cmd: bash runs.sh

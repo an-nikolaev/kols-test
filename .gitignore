@@ -1,4 +1,6 @@
-/src/main/resources/run.sh
 /result.log
 /stests.iml
 /out/
+/target/
+/test-output/
+/.idea/
