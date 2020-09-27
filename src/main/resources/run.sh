@@ -2,7 +2,7 @@
 shopt -s extglob
 CURR_DATE=$(date +%Y-%m-%d_%H-%M-%S)
 
-java -Dselenide.headless=true -Dselenide.remote=http://188.213.168.204:4444/wd/hub -DOUT=$CURR_DATE -Dselenide.chromeoptions.args="--user-agent=bot Googlebot selenium webdriver selenium-bot webdriver-bot" -Dselenide.browser="chrome" -Duser.dir=/home/ibljad/tests/jar -cp ./stests.jar com.kf.stests.Main
+java -Dselenide.headless=true -Dselenide.remote=http://188.213.168.204:4444/wd/hub -DOUT=$CURR_DATE -Dselenide.chromeoptions.args="--user-agent=bot Googlebot selenium webdriver selenium-bot webdriver-bot" -Dselenide.browser="chrome" -Duser.dir=/home/ibljad/tests/jar -jar stests-1.0-SNAPSHOT.jar
 mkdir ./../old/$CURR_DATE
 RESULT=$(cat result.log)
 

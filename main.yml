@@ -11,10 +11,10 @@
     - name: build tests
       shell:
         cmd: mvn clean package
-        chdir: target
+        chdir: /home/ibljad/tests/ansible/kols-test
 
 
     - name: run tests script
       shell:
-        chdir: target
+        chdir: /home/ibljad/tests/ansible/kols-test/target
         cmd: bash run.sh
